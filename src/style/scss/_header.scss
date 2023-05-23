@@ -1,19 +1,14 @@
 .header {
   position: relative;
-  background-color: $accent;
+  background-color: $header-bg;
   @extend %flex;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-  padding: 32px 18px;
   z-index: 50;
 
-  @media screen and (min-width: 1024px) {
-    padding: 32px 32px;
-  }
-
-  &.active {
+  &.activeBurger {
     .nav-list {
       opacity: 1;
       visibility: visible;
@@ -35,34 +30,63 @@
       }
     }
   }
+}
 
-  .container {
-    @extend %flex;
-    @include size(100%, auto);
-    justify-content: space-between;
+.container {
+  @extend %flex;
+  @include size(100%, auto);
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 15px 0;
+  }
+}
+
+.logo-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  .icon-holder {
+    display: flex;
+    justify-content: center;
     align-items: center;
-
-    @media screen and (min-width: 768px) {
-      flex-direction: column;
-    }
+    width: 38px;
+    height: 38px;
+    @include font-setting('Montserrat', normal, 500, 20px, 20px, 0.1em, $header-logo);
+    border: solid 3px $header-logo;
+    margin-right: 10px;
 
     @media screen and (min-width: 1024px) {
-      flex-direction: row;
-      //justify-content: space-between;
+      margin-right: 17px;
     }
   }
 
-  .nav-holder {
-    @media screen and (min-width: 768px) {
-      width: 575px;
-      display: flex;
-      justify-content: center;
+  .text-holder {
+    display: none;
+    @include font-setting('Montserrat', normal, 500, 18px, 18px, 0.1em, $header-text);
+
+    @media screen and (min-width: 1024px) {
+      display: block;
     }
+  }
+}
+
+.nav-holder {
+  @media screen and (min-width: 1024px) {
+    width: 580px;
+    display: block;
+    display: flex;
+  }
+
+  .nav {
+    width: 100%;
   }
 
   .nav-list {
-    background-color: $accent;
-    padding: 32px 0;
+    background-color: $header-bg;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -73,42 +97,32 @@
     visibility: hidden;
     transition: all ease-in-out 0.3s;
 
-    margin-bottom: 24px;
-
-    @media screen and (min-width: 768px) {
-      & > :not(:last-child) {
-        margin-right: 38px;
-      }
-      margin-bottom: 0;
-      padding: 0;
+    @media screen and (min-width: 1024px) {
       position: static;
       opacity: 1;
       visibility: visible;
       display: flex;
-      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .nav-item {
+      padding: 10px;
+
+      @media screen and (min-width: 1024px) {
+        padding: 0;
+      }
+
+      &.activeLink {
+        .nav-item {
+          color: red;
+        }
+      }
+    }
+
+    .nav-link {
+      @include font-setting('Montserrat', normal, 500, 16px, 16px, 0.1em, $header-text);
     }
   }
-}
-
-.logo-holder {
-  //margin: 0 auto;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 0;
-  }
-}
-
-.nav {
-  width: 100%;
-}
-
-.nav-link {
-  @include font-setting("Aleo", normal, 400, 14px, 20px, 0.1em, $white);
-  text-transform: uppercase;
 }
 
 .burger-btn {
@@ -119,18 +133,18 @@
   outline: none;
   border: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     display: none;
   }
 
   span,
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     width: 100%;
-    border-bottom: 2px solid $white;
+    border-bottom: 2px solid $header-text;
     transition: all ease-in-out 0.3s;
   }
 

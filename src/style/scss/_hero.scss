@@ -1,0 +1,36 @@
+.hero {
+  @extend %flex;
+  @include size(100%, 500px);
+  background-position: -460px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 1024px) {
+    background-position: 0 0;
+  }
+
+  .container {
+    @extend %flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 15px;
+
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+    }
+  }
+}
+
+h1 {
+  @include font-setting('Montserrat', normal, 500, 35px, 35px, 0.1em, $white);
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 60px;
+  }
+}
