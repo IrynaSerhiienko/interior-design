@@ -1,0 +1,140 @@
+.footer {
+  @extend %flex;
+  width: 100%;
+  background-color: $black;
+
+  .container {
+    padding: 80px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .logo-link {
+      margin-bottom: 8px;
+    }
+
+    .text-holder {
+      @include font-setting(
+        "Josefin Sans",
+        normal,
+        400,
+        14px,
+        20px,
+        0.2em,
+        $white
+      );
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.socials-holder {
+  @extend %flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+
+  .list {
+    @extend %flex;
+    height: 32px;
+
+    & > *:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  .link {
+    @include size(32px, 32px);
+    position: relative;
+    display: inline-block;
+    align-items: flex-end;
+
+    i {
+      color: $white;
+    }
+  }
+
+  ._icon-facebook:before {
+    content: "\e903";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+
+    .item {
+      @include size(20px, 32px);
+    }
+  }
+
+  ._icon-facebook:hover {
+    color: $accent;
+  }
+
+  ._icon-twitter:before {
+    content: "\e901";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+  }
+
+  ._icon-twitter:hover {
+    color: $accent;
+  }
+
+  ._icon-linkedin:before {
+    content: "\e905";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+  }
+
+  ._icon-linkedin:hover {
+    color: $accent;
+  }
+
+  ._icon-youtube:before {
+    content: "\e902";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+  }
+
+  ._icon-youtube:hover {
+    color: $red;
+  }
+
+  ._icon-pinterest:before {
+    content: "\e900";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+  }
+
+  ._icon-pinterest:hover {
+    color: $red;
+  }
+}
