@@ -1,4 +1,4 @@
-.hero {
+.aboutUs {
   @extend %flex;
   @include size(100%, 500px);
   background-position: -460px 0;
@@ -25,7 +25,7 @@
 }
 
 h1 {
-  @include font-setting('Montserrat', normal, 500, 35px, 35px, 0.1em, $white);
+  @include font-setting('Montserrat', normal, 500, 35px, 35px, 0.001em, $white);
   width: 100%;
   text-transform: uppercase;
   margin-bottom: 40px;

@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-color: $header-bg;
+  background-color: $dark;
   @extend %flex;
   position: fixed;
   width: 100%;
@@ -55,8 +55,8 @@
     align-items: center;
     width: 38px;
     height: 38px;
-    @include font-setting('Montserrat', normal, 500, 20px, 20px, 0.1em, $header-logo);
-    border: solid 3px $header-logo;
+    @include font-setting('Montserrat', normal, 500, 20px, 20px, 0.001em, $orange);
+    border: solid 3px $orange;
     margin-right: 10px;
 
     @media screen and (min-width: 1024px) {
@@ -66,7 +66,7 @@
 
   .text-holder {
     display: none;
-    @include font-setting('Montserrat', normal, 500, 18px, 18px, 0.1em, $header-text);
+    @include font-setting('Montserrat', normal, 500, 18px, 18px, 0.001em, $header-text);
 
     @media screen and (min-width: 1024px) {
       display: block;
@@ -86,7 +86,7 @@
   }
 
   .nav-list {
-    background-color: $header-bg;
+    background-color: $dark;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -120,7 +120,7 @@
     }
 
     .nav-link {
-      @include font-setting('Montserrat', normal, 500, 16px, 16px, 0.1em, $header-text);
+      @include font-setting('Montserrat', normal, 500, 16px, 16px, 0.001em, $header-text);
     }
   }
 }

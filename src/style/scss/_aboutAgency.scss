@@ -1,0 +1,113 @@
+.aboutAgency {
+  @extend %flex;
+  @include size(100%, auto);
+  //   @include size(100%, 615px);
+
+  .container {
+    @extend %flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 60px 15px;
+
+    @media screen and (min-width: 1024px) {
+      padding: 80px 0;
+    }
+  }
+}
+
+.contentHolder {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  .imgHolder {
+    width: 290px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      min-width: 470px;
+      margin-right: 15px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      align-self: center;
+    }
+
+    @media screen and (min-width: 1140px) {
+      min-width: 570px;
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+
+  .textHolder {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    p {
+      @include font-setting('Montserrat', normal, 400, 15px, 25px, 0.002em, $dark);
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+
+      @media screen and (min-width: 1024px) {
+        // font-size: 15px;
+      }
+    }
+  }
+}
+
+h2 {
+  @include font-setting('Montserrat', normal, 600, 25px, 25px, 0.001em, $dark);
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+}
+
+h3 {
+  @include font-setting('Montserrat', normal, 600, 18px, 18px, 0.001em, $dark);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+.items {
+  padding-left: 10px;
+  li {
+    position: relative;
+    @include font-setting('Montserrat', normal, 400, 15px, 25px, 0.002em, $dark);
+    width: 100%;
+    text-align: left;
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 1024px) {
+      line-height: 15px;
+    }
+
+    i {
+      @include size(15px, 15px);
+      color: $orange;
+      margin-right: 5px;
+    }
+  }
+}

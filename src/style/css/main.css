@@ -87,7 +87,7 @@ h6 {
   font-weight: 400;
 }
 
-.socials-holder .list, .socials-holder, .footer, .hero .container, .hero, .header, .container {
+.socials-holder .list, .socials-holder, .footer, .aboutAgency .container, .aboutAgency, .aboutUs .container, .aboutUs, .header, .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +203,7 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.001em;
   color: #ffa000;
   border: solid 3px #ffa000;
   margin-right: 10px;
@@ -220,7 +220,7 @@ img {
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.001em;
   color: #eaeaea;
 }
 @media screen and (min-width: 1024px) {
@@ -284,7 +284,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.001em;
   color: #eaeaea;
 }
 
@@ -322,7 +322,7 @@ img {
   bottom: 0;
 }
 
-.hero {
+.aboutUs {
   width: 100%;
   height: 500px;
   background-position: -460px 0;
@@ -330,11 +330,11 @@ img {
   background-size: cover;
 }
 @media screen and (min-width: 1024px) {
-  .hero {
+  .aboutUs {
     background-position: 0 0;
   }
 }
-.hero .container {
+.aboutUs .container {
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -350,7 +350,7 @@ img {
   padding: 0 15px;
 }
 @media screen and (min-width: 1024px) {
-  .hero .container {
+  .aboutUs .container {
     padding: 0;
   }
 }
@@ -361,7 +361,7 @@ h1 {
   font-weight: 500;
   font-size: 35px;
   line-height: 35px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.001em;
   color: #ffffff;
   width: 100%;
   text-transform: uppercase;
@@ -371,6 +371,163 @@ h1 {
   h1 {
     font-size: 60px;
   }
+}
+
+.aboutAgency {
+  width: 100%;
+  height: auto;
+}
+.aboutAgency .container {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 15px;
+}
+@media screen and (min-width: 1024px) {
+  .aboutAgency .container {
+    padding: 80px 0;
+  }
+}
+
+.contentHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .contentHolder {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.contentHolder .imgHolder {
+  width: 290px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contentHolder .imgHolder {
+    min-width: 470px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contentHolder .imgHolder {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .contentHolder .imgHolder {
+    min-width: 570px;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+.contentHolder .textHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contentHolder .textHolder p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.002em;
+  color: #222222;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.001em;
+  color: #222222;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.001em;
+  color: #222222;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+.items {
+  padding-left: 10px;
+}
+.items li {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.002em;
+  color: #222222;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .items li {
+    line-height: 15px;
+  }
+}
+.items li i {
+  width: 15px;
+  height: 15px;
+  color: #ffa000;
+  margin-right: 5px;
 }
 
 .footer {
