@@ -1,7 +1,7 @@
 .footer {
   @extend %flex;
   width: 100%;
-  background-color: $black;
+  background-color: $dark;
 
   .container {
     padding: 80px 0;
@@ -14,15 +14,7 @@
     }
 
     .text-holder {
-      @include font-setting(
-        "Josefin Sans",
-        normal,
-        400,
-        14px,
-        20px,
-        0.2em,
-        $white
-      );
+      @include font-setting('Josefin Sans', normal, 400, 14px, 20px, 0.2em, $white);
       margin-bottom: 20px;
     }
   }
@@ -55,7 +47,7 @@
   }
 
   ._icon-facebook:before {
-    content: "\e903";
+    content: '\e903';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +67,7 @@
   }
 
   ._icon-twitter:before {
-    content: "\e901";
+    content: '\e901';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +83,7 @@
   }
 
   ._icon-linkedin:before {
-    content: "\e905";
+    content: '\e905';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +99,7 @@
   }
 
   ._icon-youtube:before {
-    content: "\e902";
+    content: '\e902';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +115,7 @@
   }
 
   ._icon-pinterest:before {
-    content: "\e900";
+    content: '\e900';
     display: flex;
     justify-content: center;
     align-items: center;

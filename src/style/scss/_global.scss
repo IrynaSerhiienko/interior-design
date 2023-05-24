@@ -33,29 +33,7 @@
 //   text-transform: uppercase;
 // }
 
-.text-holder {
-  &.body {
-    p {
-      @include font-setting('Josefin Sans', normal, 300, 16px, 28px, 0.1em, $white);
-    }
-  }
-}
-
-// .logo-link {
-//   @include font-setting("Josefin Sans", normal, 700, 24px, 28px, 0.1em, $white);
-// }
-
 img {
   width: 100%;
+  display: block;
 }
-
-// .btn {
-//   @include font-setting("Aleo", normal, 400, 16px, 20px, 0.07em, $white);
-//   text-align: center;
-//   text-transform: uppercase;
-
-//   display: inline-block;
-//   @include size(213px, 60px);
-//   padding: 20px 0;
-//   background-color: $accent;
-// }

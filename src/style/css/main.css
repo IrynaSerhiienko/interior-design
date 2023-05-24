@@ -87,7 +87,7 @@ h6 {
   font-weight: 400;
 }
 
-.socials-holder .list, .socials-holder, .footer, .aboutAgency .container, .aboutAgency, .aboutUs .container, .aboutUs, .header, .container {
+.socials-holder .list, .socials-holder, .footer, .whatWeDoing .wrapper, .whatWeDoing, .aboutAgency .container, .aboutAgency, .aboutUs .container, .aboutUs, .header, .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,18 +119,9 @@ h6 {
   margin: 0 auto;
 }
 
-.text-holder.body p {
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-}
-
 img {
   width: 100%;
+  display: block;
 }
 
 .header {
@@ -376,6 +367,7 @@ h1 {
 .aboutAgency {
   width: 100%;
   height: auto;
+  background-color: #ffffff;
 }
 .aboutAgency .container {
   width: 100%;
@@ -461,6 +453,7 @@ h1 {
   text-align: left;
   margin-bottom: 20px;
 }
+
 h2 {
   font-family: "Montserrat";
   font-style: normal;
@@ -530,9 +523,98 @@ h3 {
   margin-right: 5px;
 }
 
+.whatWeDoing {
+  width: 100%;
+  height: auto;
+  width: 100%;
+  height: 850px;
+  background-color: #eeeeee;
+}
+.whatWeDoing .wrapper {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  padding: 0 15px;
+}
+@media screen and (min-width: 1024px) {
+  .whatWeDoing .wrapper {
+    padding: 75px 0 75px 0;
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+.description {
+  background-color: #ffffff;
+  padding: 20px 10px 20px 10px;
+}
+@media screen and (min-width: 1024px) {
+  .description {
+    padding: 30px 20px 30px 20px;
+  }
+}
+.description p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.002em;
+  color: #222222;
+  width: 100%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.001em;
+  color: #222222;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.001em;
+  color: #222222;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
 .footer {
   width: 100%;
-  background-color: #302525;
+  background-color: #222222;
 }
 .footer .container {
   padding: 80px 0;

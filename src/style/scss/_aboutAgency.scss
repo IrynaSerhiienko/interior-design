@@ -1,7 +1,7 @@
 .aboutAgency {
   @extend %flex;
   @include size(100%, auto);
-  //   @include size(100%, 615px);
+  background-color: $white;
 
   .container {
     @extend %flex;
@@ -56,10 +56,6 @@
       width: 100%;
       text-align: left;
       margin-bottom: 20px;
-
-      @media screen and (min-width: 1024px) {
-        // font-size: 15px;
-      }
     }
   }
 }
