@@ -15,40 +15,10 @@
     />
 
     <link rel="stylesheet" href="./src/icomoon/style.css" />
-    <!-- <link rel="stylesheet" href="./src/swiper/swiper-bundle.min.css" /> -->
-
     <link rel="stylesheet" href="./src/style/css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/swiper/swiper-bundle.min.css" />
 
     <title>Interior Design</title>
-
-    <style>
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      /* .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      } */
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      /* .swiper {
-        margin-left: auto;
-        margin-right: auto;
-      } */
-    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -60,6 +30,33 @@
           </a>
 
           <div class="nav-holder">
+            <nav class="nav js-nav">
+              <ul class="nav-list">
+                <li class="nav-item js-nav-item">
+                  <a href="#aboutUs" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item js-nav-item">
+                  <a href="#aboutAgency" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item js-nav-item">
+                  <a href="#whatWeDoing" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item js-nav-item">
+                  <a href="#footer" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item js-nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle">Extra</a>
+                  <i class="fa-solid fa-chevron-down" style="color: #eeeeee"></i>
+                  <ul class="dropdownMenu">
+                    <li><a href="#">404 Error</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                    <li><a href="#">Thank You</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- <div class="nav-holder">
             <nav class="nav js-nav">
               <ul class="nav-list">
                 <li class="nav-item">
@@ -79,7 +76,7 @@
                 </li>
               </ul>
             </nav>
-          </div>
+          </div> -->
 
           <button class="burger-btn js-burger-btn">
             <span></span>
@@ -88,14 +85,14 @@
       </header>
 
       <main class="main">
-        <section class="aboutUs" style="background-image: url(src/img/banner_bg.jpg)">
+        <section class="aboutUs" id="aboutUs" style="background-image: url(src/img/banner_bg.jpg)">
           <div class="container">
             <h1>about us</h1>
             <div class="breadcrumbs">breadcrumbs</div>
           </div>
         </section>
 
-        <section class="aboutAgency">
+        <section class="aboutAgency" id="aboutAgency">
           <div class="container">
             <h2>about agency</h2>
             <div class="contentHolder">
@@ -136,7 +133,7 @@
           </div>
         </section>
 
-        <section class="whatWeDoing">
+        <section class="whatWeDoing" id="whatWeDoing">
           <div class="wrapper">
             <h2>what we doing</h2>
             <div class="slider">
@@ -144,7 +141,7 @@
                 <div class="swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div class="slider-item">
+                      <div class="item">
                         <img class="img" src="src/img/what_we_doing_1.jpg" alt="what_we_doing_1" />
                         <div class="description">
                           <h3>Office Design</h3>
@@ -158,21 +155,21 @@
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="slider__item">
+                      <div class="item">
                         <img class="img" src="src/img/what_we_doing_2.jpg" alt="what_we_doing_2" />
                         <div class="description">
                           <h3>Office Design</h3>
                           <p>
-                            Cras lacus nulla, efficitur vitae ante ut, vulputate congue odio. Ut
-                            placerat dignissim ultricies. Fusce non sem nec orci dignissim
-                            vestibulum. Morbi risus dolor, fringilla vitae elementum nec, hendrerit
-                            a neque. Pellentesque eu ullamcorper leo, eget volutpat diam.
+                            Aenean id nisi tortor. Nullam enim ante, blandit non sollicitudin at,
+                            consectetur vel lorem. Duis interdum orci et neque interdum luctus.
+                            Vestibulum aliquet tincidunt mollis. Quisque sagittis nunc sit amet
+                            justo mattis volutpat. Sed id nunc at massa eleifend vestibulum.
                           </p>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="slider__item">
+                      <div class="item">
                         <img class="img" src="src/img/what_we_doing_3.jpg" alt="what_we_doing_3" />
                         <div class="description">
                           <h3>Commercial Design</h3>
@@ -186,8 +183,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
                 </div>
               </div>
@@ -195,15 +190,18 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="container">
           <div class="text-holder">
             <span>&copy;Interior Design 2020. All Rights Reserved</span>
           </div>
           <div class="socials-holder">
             <ul class="list">
-              <li class="item">
+              <li>
                 <a href="#" class="link" target="_blank"><i class="_icon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#" class="link" target="_blank"><i class="_icon-twitter"></i></a>
               </li>
               <li>
                 <a href="#" class="link" target="_blank"><i class="_icon-twitter"></i></a>
@@ -211,61 +209,15 @@
               <li>
                 <a href="#" class="link" target="_blank"><i class="_icon-linkedin"></i></a>
               </li>
-              <li>
-                <a href="#" class="link" target="_blank"><i class="_icon-youtube"></i></a>
-              </li>
-              <li>
-                <a href="#" class="link" target="_blank"><i class="_icon-pinterest"></i></a>
-              </li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
 
-    <script src="./src/js/main.js"></script>
     <script src="https://kit.fontawesome.com/9d108dab0d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- <script src="./src/swiper/swiper-bundle.min.js"></script> -->
-    <!-- <script src="./src/js/swiper.js"></script> -->
-
-    <script>
-      const swiper = new Swiper('.swiper', {
-        // slidesPerView: 2.5,
-        spaceBetween: 20,
-        // centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 1500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1.5,
-          },
-          375: {
-            slidesPerView: 1.7,
-          },
-          425: {
-            slidesPerView: 2.2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
+    <script src="./src/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/js/swiper.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>

@@ -2,7 +2,7 @@
   @extend %flex;
   width: 100%;
   height: auto;
-  @include size(100%, 850px);
+  @include size(100%, 770px);
   background-color: $light-grey;
 
   .wrapper {
@@ -11,79 +11,71 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    padding: 0 15px;
+    padding: 50px 15px 0;
 
     @media screen and (min-width: 1024px) {
-      padding: 75px 0 75px 0;
+      padding: 75px 0;
     }
   }
 }
-  //   .contentHolder {
-  //     display: flex;
-  //     // flex-direction: column;
-  //     width: 100%;
 
-  //     @media screen and (min-width: 1024px) {
-  //       justify-content: space-between;
-  //     }
-  //   }
-  .swiper {
-    width: 100%;
+.item {
+  @include size(290px, auto);
 
-    .swiper-wrapper {
-      //width: 100%;
-    }
-  }
-    //   .item {
-    //     @include size(290px, 193px);
-
-    //     @media screen and (min-width: 1024px) {
-    //       @include size(330px, 220px);
-    //     }
-
-    //     @media screen and (min-width: 1140px) {
-    //       @include size(370px, 245px);
-    //     }
-    //   }
-  
-  .description {
-    background-color: $white;
-    padding: 20px 10px 20px 10px;
-
-    @media screen and (min-width: 1024px) {
-      padding: 30px 20px 30px 20px;
-    }
-
-    p {
-      @include font-setting('Montserrat', normal, 400, 15px, 25px, 0.002em, $dark);
-      width: 100%;
-      text-align: justify;
-      margin-bottom: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    @include size(330px, auto);
   }
 
-  h2 {
-    @include font-setting('Montserrat', normal, 600, 25px, 25px, 0.001em, $dark);
-    width: 100%;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+  @media screen and (min-width: 1140px) {
+    @include size(370px, auto);
+  }
+}
 
-    @media screen and (min-width: 1024px) {
-      font-size: 35px;
-      margin-bottom: 50px;
-    }
+.description {
+  background-color: $white;
+  padding: 20px 10px 20px 10px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 30px 20px 30px 20px;
   }
 
-  h3 {
-    @include font-setting('Montserrat', normal, 600, 18px, 18px, 0.001em, $dark);
+  p {
+    @include font-setting('Montserrat', normal, 400, 15px, 25px, 0.002em, $dark);
     width: 100%;
-    text-transform: uppercase;
-    text-align: left;
+    text-align: justify;
     margin-bottom: 20px;
-
-    @media screen and (min-width: 1024px) {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
   }
+}
 
+h2 {
+  @include font-setting('Montserrat', normal, 600, 25px, 25px, 0.001em, $dark);
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+}
+
+h3 {
+  @include font-setting('Montserrat', normal, 600, 18px, 18px, 0.001em, $dark);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.container {
+  padding: 0;
+}
+
+.slider {
+  width: 100%;
+}

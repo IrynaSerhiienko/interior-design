@@ -30,17 +30,18 @@
       }
     }
   }
-}
 
-.container {
-  @extend %flex;
-  @include size(100%, auto);
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 15px;
+  .container {
+    position: relative;
+    @extend %flex;
+    @include size(100%, auto);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
 
-  @media screen and (min-width: 1024px) {
-    padding: 15px 0;
+    @media screen and (min-width: 1024px) {
+      padding: 15px 0;
+    }
   }
 }
 
@@ -121,6 +122,43 @@
 
     .nav-link {
       @include font-setting('Montserrat', normal, 500, 16px, 16px, 0.001em, $header-text);
+
+      &.active {
+        color: $orange;
+      }
+    }
+  }
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 180px;
+  right: 0;
+  width: 190px;
+  background-color: $dark;
+  border-top: 4px solid $orange;
+
+  @media screen and (min-width: 1024px) {
+    top: 67px;
+    width: 200px;
+  }
+
+  &.open {
+    display: block;
+  }
+  li {
+    @include font-setting('Montserrat', normal, 500, 16px, 16px, 0.001em, $header-text);
+    text-align: left;
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid $dark-grey;
+
+    a {
+      color: $header-text;
+    }
+
+    .fa-chevron-down {
+      color: $orange;
     }
   }
 }

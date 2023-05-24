@@ -21,7 +21,6 @@
   @mixin title {
     @include size-m-w;
     @include font-setting;
-  
     @extend %flex;
   }
   
