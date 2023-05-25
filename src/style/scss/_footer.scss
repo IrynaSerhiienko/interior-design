@@ -91,7 +91,24 @@
     transform: translate(-50%, -50%);
     font-size: 20px;
   }
+
   ._icon-linkedin:hover {
+    color: $orange;
+  }
+
+  ._icon-instagram:before {
+    content: '\e902';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+
+  ._icon-instagram:hover {
     color: $orange;
   }
 }

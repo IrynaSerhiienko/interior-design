@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?c5dnux');
-  src:  url('fonts/icons.eot?c5dnux#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?c5dnux') format('truetype'),
-    url('fonts/icons.woff?c5dnux') format('woff'),
-    url('fonts/icons.svg?c5dnux#icons') format('svg');
+  src: url('fonts/icons.eot?s66osy');
+  src: url('fonts/icons.eot?s66osy#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?s66osy') format('truetype'), url('fonts/icons.woff?s66osy') format('woff'),
+    url('fonts/icons.svg?s66osy#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="_icon-"], [class*=" _icon-"] {
+[class^='_icon-'],
+[class*=' _icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -26,32 +26,17 @@
 }
 
 ._icon-linkedin:before {
-  content: "\e905";
-}
-._icon-pinterest:before {
-  content: "\e900";
+  content: '\e905';
 }
 ._icon-twitter:before {
-  content: "\e901";
-}
-._icon-youtube:before {
-  content: "\e902";
+  content: '\e901';
 }
 ._icon-facebook:before {
-  content: "\e903";
+  content: '\e903';
 }
-._icon-quote-left:before {
-  content: "\e904";
+._icon-instagram:before {
+  content: '\e902';
 }
-._icon-chevron-down:before {
-  content: "\e906";
-}
-._icon-thumbs-up:before {
-  content: "\e907";
-}
-._icon-check-circle:before {
-  content: "\e908";
-}
-._icon-search:before {
-  content: "\e909";
+._icon-circle-up:before {
+  content: '\ea41';
 }

@@ -7,9 +7,9 @@
 
 .main {
   padding-top: 68px;
-  //flex-grow: 1;
-  background-color: $bg;
   font-family: 'Montserrat', sans-serif;
+  //flex-grow: 1;
+  //background-color: $bg;
   //flex: 1 1 auto;
 }
 
@@ -18,20 +18,6 @@
   @extend %flex;
   margin: 0 auto;
 }
-
-// h2 {
-//   @include font-setting("Aleo", normal, 400, 33px, 40px, 0.1em, $white);
-//   text-transform: capitalize;
-
-//   @media screen and (min-width: 576px) {
-//     font-size: 36px;
-//   }
-// }
-
-// h3 {
-//   @include font-setting("Josefin Sans", normal, 400, 20px, 28px, 0.1em, $white);
-//   text-transform: uppercase;
-// }
 
 img {
   width: 100%;
